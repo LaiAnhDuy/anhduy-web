@@ -1,6 +1,7 @@
 @import './setting.scss';
 
 .navbar-board{
+    height: $navbar-boardbar-height;
     padding-left: $gap;
     display: flex;
     align-items: center;
