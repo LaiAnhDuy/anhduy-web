@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600');
 
 $gap: 10px;
-$common-element-bg:rgba(255, 255, 255, .24);
+// appbar + boardbar + boardcontent = 99, 1vh for scoll bar
+$navbar-appbar-height: 5vh;
+$navbar-boardbar-height: 6vh;
+$boardcontent-height: 88vh;
+
 //color
 $board-bg-color:#0079bf;
+$common-element-bg:rgba(255, 255, 255, .24);
