@@ -2,7 +2,6 @@
 
 $column-footer-height: 36px;
 $column-header-height: 36px;
-$column-border-radius: 5px;
 $column-height: calc(#{$boardcontent-height} - #{$gap * 2});
 
 $list-bg-color: #ebecf0;
@@ -16,7 +15,6 @@ $list-bg-color: #ebecf0;
     
     > * {
         background-color: $list-bg-color;
-        color: #333;
         padding: 0 8px;   
     }
     header.column-drag-handle {
@@ -33,8 +31,16 @@ $list-bg-color: #ebecf0;
         padding-left: $gap;
         height: $column-footer-height;
         line-height: $column-footer-height;
-        border-top-left-radius: $column-border-radius;
-        border-top-right-radius: $column-border-radius;
+        border-bottom-left-radius: $column-border-radius;
+        border-bottom-right-radius: $column-border-radius;
+        color: #888;
+        .footer-actions{
+            margin-left: $gap;
+            cursor: pointer;
+            &:hover {
+                color: $app-main-text-color;
+            }
+        }
     }
     .card-list{
         margin: 0;
@@ -53,11 +59,13 @@ $list-bg-color: #ebecf0;
         }
         .card-ghost {
             transition: transform 0.18s ease;
-            transform: rotateZ(5deg)
+            transform: rotateZ(5deg);
+            font-weight: bold;
         }       
         .card-ghost-drop{
             transition: transform 0.18s ease-in-out;
-            transform: rotateZ(0deg)
+            transform: rotateZ(0deg);
+            font-weight: bold;
         }
         .card-drop-preview {
             background-color: rgba(150, 150, 200, 0.1);
