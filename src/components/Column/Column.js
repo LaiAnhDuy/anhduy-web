@@ -108,7 +108,7 @@ function Column(props) {
                   <Dropdown.Item onClick={toggleOpenNewCardForm}>Add card....</Dropdown.Item>
                   <Dropdown.Item onClick={toggleShowConfirmModa}>Remove....</Dropdown.Item>
                   <Dropdown.Item >Move all cards in this column...</Dropdown.Item>
-                  <Dropdown.Item >Làm mau lên, sắp deadline rồi</Dropdown.Item>
+                 
                 </Dropdown.Menu>
             </Dropdown>
         </div>
