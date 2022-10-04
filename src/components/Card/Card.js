@@ -16,8 +16,8 @@ function Card(props) {
           />
           }
           {card.title}
-       
          
+          <span className="delete-card"> X </span>
         </div>
     )
 }
